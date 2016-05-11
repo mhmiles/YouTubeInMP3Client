@@ -64,7 +64,7 @@ s.homepage     = "http://www.youtubeinmp3.com"
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   s.platform     = :ios
+   s.platform     = :ios, "8.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -133,6 +133,6 @@ s.source_files  = "Source"
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency "Alamofire"
 
 end
