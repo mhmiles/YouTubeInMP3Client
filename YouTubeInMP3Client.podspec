@@ -80,7 +80,7 @@ s.homepage     = "http://www.youtubeinmp3.com"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-s.source       = { :git => "https://github.com/mhmiles/YouTubeInMP3Client.git", :tag => s.version
+s.source       = { :git => "https://github.com/mhmiles/YouTubeInMP3Client.git", :tag => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ s.source       = { :git => "https://github.com/mhmiles/YouTubeInMP3Client.git", 
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source"
+s.source_files  = "Source/*.{h,swift}"
 # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
