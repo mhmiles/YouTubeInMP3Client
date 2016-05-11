@@ -91,7 +91,7 @@ s.source       = { :git => "https://github.com/mhmiles/YouTubeInMP3Client.git", 
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files  = "Source/*.{h,swift}"
+s.source_files  = "Source"
 # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
