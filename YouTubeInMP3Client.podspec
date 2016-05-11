@@ -80,7 +80,7 @@ s.homepage     = "http://www.youtubeinmp3.com"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-s.source       = { :git => "https://github.com/YouTubeInMP3Client.git", :tag => s.version
+s.source       = { :git => "https://github.com/mhmiles/YouTubeInMP3Client.git", :tag => s.version
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
