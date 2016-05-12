@@ -1,0 +1,6 @@
+framework module Pods_YouTubeInMP3Client {
+  umbrella header "Pods-YouTubeInMP3Client-umbrella.h"
+
+  export *
+  module * { export * }
+}
