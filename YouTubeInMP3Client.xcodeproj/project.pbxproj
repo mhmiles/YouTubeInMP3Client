@@ -126,7 +126,6 @@
 			buildConfigurationList = 024BDC1D1CE3CF3B0030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3Client" */;
 			buildPhases = (
 				024BDC111CE3CF3B0030D24A /* Frameworks */,
-				024BDC441CE453500030D24A /* ShellScript */,
 				024BDC101CE3CF3B0030D24A /* Sources */,
 				024BDC131CE3CF3B0030D24A /* Resources */,
 				024BDC121CE3CF3B0030D24A /* Headers */,
@@ -211,24 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		024BDC441CE453500030D24A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Fuzi.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		024BDC101CE3CF3B0030D24A /* Sources */ = {
