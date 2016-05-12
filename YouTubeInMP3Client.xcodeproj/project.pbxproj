@@ -125,11 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 024BDC1D1CE3CF3B0030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3Client" */;
 			buildPhases = (
-				024BDC101CE3CF3B0030D24A /* Sources */,
 				024BDC111CE3CF3B0030D24A /* Frameworks */,
-				024BDC121CE3CF3B0030D24A /* Headers */,
-				024BDC131CE3CF3B0030D24A /* Resources */,
 				024BDC441CE453500030D24A /* ShellScript */,
+				024BDC101CE3CF3B0030D24A /* Sources */,
+				024BDC131CE3CF3B0030D24A /* Resources */,
+				024BDC121CE3CF3B0030D24A /* Headers */,
 			);
 			buildRules = (
 			);
