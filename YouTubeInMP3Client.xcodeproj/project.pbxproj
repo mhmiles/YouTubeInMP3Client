@@ -10,12 +10,12 @@
 		024BDC191CE3CF3B0030D24A /* YouTubeInMP3Client.h in Headers */ = {isa = PBXBuildFile; fileRef = 024BDC181CE3CF3B0030D24A /* YouTubeInMP3Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		024BDC211CE3CF470030D24A /* YouTubeInMP3Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC201CE3CF470030D24A /* YouTubeInMP3Client.swift */; };
 		024BDC321CE40C630030D24A /* YouTubeInMP3ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC311CE40C630030D24A /* YouTubeInMP3ClientTests.swift */; };
-		024BDC341CE40C630030D24A /* YouTubeInMP3Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */; };
 		024BDC3B1CE40D120030D24A /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 024BDC3A1CE40D120030D24A /* cartfile */; };
 		024BDC3E1CE40EA00030D24A /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC3D1CE40EA00030D24A /* Package.swift */; };
 		024BDC411CE40F200030D24A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC3F1CE40F0B0030D24A /* Alamofire.framework */; };
 		024BDC491CE45A9F0030D24A /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC451CE458160030D24A /* Fuzi.framework */; };
 		024BDC4F1CE462720030D24A /* String+substringFromIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC4E1CE462720030D24A /* String+substringFromIndex.swift */; };
+		02F142881CE51DE10017122C /* YouTubeInMP3Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024BDC341CE40C630030D24A /* YouTubeInMP3Client.framework in Frameworks */,
+				02F142881CE51DE10017122C /* YouTubeInMP3Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +125,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 024BDC1D1CE3CF3B0030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3Client" */;
 			buildPhases = (
-				024BDC111CE3CF3B0030D24A /* Frameworks */,
 				024BDC101CE3CF3B0030D24A /* Sources */,
-				024BDC131CE3CF3B0030D24A /* Resources */,
+				024BDC111CE3CF3B0030D24A /* Frameworks */,
 				024BDC121CE3CF3B0030D24A /* Headers */,
+				024BDC131CE3CF3B0030D24A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +146,7 @@
 				024BDC2B1CE40C630030D24A /* Sources */,
 				024BDC2C1CE40C630030D24A /* Frameworks */,
 				024BDC2D1CE40C630030D24A /* Resources */,
+				02F142871CE51DC10017122C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,6 +211,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F142871CE51DC10017122C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Fuzi.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		024BDC101CE3CF3B0030D24A /* Sources */ = {
@@ -376,10 +395,7 @@
 		024BDC381CE40C630030D24A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = YouTubeInMP3ClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3ClientTests;
@@ -390,10 +406,7 @@
 		024BDC391CE40C630030D24A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = YouTubeInMP3ClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3ClientTests;
