@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "024BDC2E1CE40C630030D24A"
+               BuildableName = "YouTubeInMP3ClientTests.xctest"
+               BlueprintName = "YouTubeInMP3ClientTests"
+               ReferencedContainer = "container:YouTubeInMP3Client.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "024BDC141CE3CF3B0030D24A"
+            BuildableName = "YouTubeInMP3Client.framework"
+            BlueprintName = "YouTubeInMP3Client"
+            ReferencedContainer = "container:YouTubeInMP3Client.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

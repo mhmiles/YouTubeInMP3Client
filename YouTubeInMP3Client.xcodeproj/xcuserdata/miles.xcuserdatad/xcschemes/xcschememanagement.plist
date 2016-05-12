@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>YouTubeInMP3ClientTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>024BDC141CE3CF3B0030D24A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>024BDC2E1CE40C630030D24A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
