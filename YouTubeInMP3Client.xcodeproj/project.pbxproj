@@ -1,450 +1,877 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		024BDC191CE3CF3B0030D24A /* YouTubeInMP3Client.h in Headers */ = {isa = PBXBuildFile; fileRef = 024BDC181CE3CF3B0030D24A /* YouTubeInMP3Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		024BDC211CE3CF470030D24A /* YouTubeInMP3Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC201CE3CF470030D24A /* YouTubeInMP3Client.swift */; };
-		024BDC321CE40C630030D24A /* YouTubeInMP3ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC311CE40C630030D24A /* YouTubeInMP3ClientTests.swift */; };
-		024BDC3B1CE40D120030D24A /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 024BDC3A1CE40D120030D24A /* cartfile */; };
-		024BDC3E1CE40EA00030D24A /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC3D1CE40EA00030D24A /* Package.swift */; };
-		024BDC411CE40F200030D24A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC3F1CE40F0B0030D24A /* Alamofire.framework */; };
-		024BDC491CE45A9F0030D24A /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC451CE458160030D24A /* Fuzi.framework */; };
-		024BDC4F1CE462720030D24A /* String+substringFromIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDC4E1CE462720030D24A /* String+substringFromIndex.swift */; };
-		02F142881CE51DE10017122C /* YouTubeInMP3Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		024BDC351CE40C630030D24A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 024BDC0C1CE3CF3B0030D24A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 024BDC141CE3CF3B0030D24A;
-			remoteInfo = YouTubeInMP3Client;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubeInMP3Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		024BDC181CE3CF3B0030D24A /* YouTubeInMP3Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeInMP3Client.h; sourceTree = "<group>"; };
-		024BDC1A1CE3CF3B0030D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		024BDC201CE3CF470030D24A /* YouTubeInMP3Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeInMP3Client.swift; sourceTree = "<group>"; };
-		024BDC2F1CE40C630030D24A /* YouTubeInMP3ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeInMP3ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		024BDC311CE40C630030D24A /* YouTubeInMP3ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeInMP3ClientTests.swift; sourceTree = "<group>"; };
-		024BDC331CE40C630030D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		024BDC3A1CE40D120030D24A /* cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cartfile; sourceTree = "<group>"; };
-		024BDC3D1CE40EA00030D24A /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		024BDC3F1CE40F0B0030D24A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		024BDC451CE458160030D24A /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/iOS/Fuzi.framework; sourceTree = "<group>"; };
-		024BDC4E1CE462720030D24A /* String+substringFromIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+substringFromIndex.swift"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		024BDC111CE3CF3B0030D24A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024BDC411CE40F200030D24A /* Alamofire.framework in Frameworks */,
-				024BDC491CE45A9F0030D24A /* Fuzi.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		024BDC2C1CE40C630030D24A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02F142881CE51DE10017122C /* YouTubeInMP3Client.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		024BDC0B1CE3CF3B0030D24A = {
-			isa = PBXGroup;
-			children = (
-				024BDC451CE458160030D24A /* Fuzi.framework */,
-				024BDC3F1CE40F0B0030D24A /* Alamofire.framework */,
-				024BDC3D1CE40EA00030D24A /* Package.swift */,
-				024BDC3A1CE40D120030D24A /* cartfile */,
-				024BDC301CE40C630030D24A /* Tests */,
-				024BDC161CE3CF3B0030D24A /* Products */,
-				024BDC171CE3CF3B0030D24A /* Source */,
-			);
-			sourceTree = "<group>";
-		};
-		024BDC161CE3CF3B0030D24A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */,
-				024BDC2F1CE40C630030D24A /* YouTubeInMP3ClientTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		024BDC171CE3CF3B0030D24A /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				024BDC1A1CE3CF3B0030D24A /* Info.plist */,
-				024BDC181CE3CF3B0030D24A /* YouTubeInMP3Client.h */,
-				024BDC201CE3CF470030D24A /* YouTubeInMP3Client.swift */,
-				024BDC4E1CE462720030D24A /* String+substringFromIndex.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		024BDC301CE40C630030D24A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				024BDC311CE40C630030D24A /* YouTubeInMP3ClientTests.swift */,
-				024BDC331CE40C630030D24A /* Info.plist */,
-			);
-			name = Tests;
-			path = YouTubeInMP3ClientTests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		024BDC121CE3CF3B0030D24A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024BDC191CE3CF3B0030D24A /* YouTubeInMP3Client.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		024BDC141CE3CF3B0030D24A /* YouTubeInMP3Client */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 024BDC1D1CE3CF3B0030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3Client" */;
-			buildPhases = (
-				024BDC101CE3CF3B0030D24A /* Sources */,
-				024BDC111CE3CF3B0030D24A /* Frameworks */,
-				024BDC121CE3CF3B0030D24A /* Headers */,
-				024BDC131CE3CF3B0030D24A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YouTubeInMP3Client;
-			productName = YouTubeInMP3Client;
-			productReference = 024BDC151CE3CF3B0030D24A /* YouTubeInMP3Client.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		024BDC2E1CE40C630030D24A /* YouTubeInMP3ClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 024BDC371CE40C630030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3ClientTests" */;
-			buildPhases = (
-				024BDC2B1CE40C630030D24A /* Sources */,
-				024BDC2C1CE40C630030D24A /* Frameworks */,
-				024BDC2D1CE40C630030D24A /* Resources */,
-				02F142871CE51DC10017122C /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				024BDC361CE40C630030D24A /* PBXTargetDependency */,
-			);
-			name = YouTubeInMP3ClientTests;
-			productName = YouTubeInMP3ClientTests;
-			productReference = 024BDC2F1CE40C630030D24A /* YouTubeInMP3ClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		024BDC0C1CE3CF3B0030D24A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Miles Hollingsworth";
-				TargetAttributes = {
-					024BDC141CE3CF3B0030D24A = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					024BDC2E1CE40C630030D24A = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-				};
-			};
-			buildConfigurationList = 024BDC0F1CE3CF3B0030D24A /* Build configuration list for PBXProject "YouTubeInMP3Client" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 024BDC0B1CE3CF3B0030D24A;
-			productRefGroup = 024BDC161CE3CF3B0030D24A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				024BDC141CE3CF3B0030D24A /* YouTubeInMP3Client */,
-				024BDC2E1CE40C630030D24A /* YouTubeInMP3ClientTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		024BDC131CE3CF3B0030D24A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024BDC3B1CE40D120030D24A /* cartfile in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		024BDC2D1CE40C630030D24A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		02F142871CE51DC10017122C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Fuzi.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		024BDC101CE3CF3B0030D24A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024BDC4F1CE462720030D24A /* String+substringFromIndex.swift in Sources */,
-				024BDC3E1CE40EA00030D24A /* Package.swift in Sources */,
-				024BDC211CE3CF470030D24A /* YouTubeInMP3Client.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		024BDC2B1CE40C630030D24A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024BDC321CE40C630030D24A /* YouTubeInMP3ClientTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		024BDC361CE40C630030D24A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 024BDC141CE3CF3B0030D24A /* YouTubeInMP3Client */;
-			targetProxy = 024BDC351CE40C630030D24A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		024BDC1B1CE3CF3B0030D24A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		024BDC1C1CE3CF3B0030D24A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		024BDC1E1CE3CF3B0030D24A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3Client;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		024BDC1F1CE3CF3B0030D24A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3Client;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		024BDC381CE40C630030D24A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = YouTubeInMP3ClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3ClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		024BDC391CE40C630030D24A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = YouTubeInMP3ClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.YouTubeInMP3ClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		024BDC0F1CE3CF3B0030D24A /* Build configuration list for PBXProject "YouTubeInMP3Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				024BDC1B1CE3CF3B0030D24A /* Debug */,
-				024BDC1C1CE3CF3B0030D24A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		024BDC1D1CE3CF3B0030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				024BDC1E1CE3CF3B0030D24A /* Debug */,
-				024BDC1F1CE3CF3B0030D24A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		024BDC371CE40C630030D24A /* Build configuration list for PBXNativeTarget "YouTubeInMP3ClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				024BDC381CE40C630030D24A /* Debug */,
-				024BDC391CE40C630030D24A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 024BDC0C1CE3CF3B0030D24A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>024BDC0B1CE3CF3B0030D24A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>024BDC161CE3CF3B0030D24A</string>
+				<string>024BDC171CE3CF3B0030D24A</string>
+				<string>024BDC301CE40C630030D24A</string>
+				<string>024BDC3F1CE40F0B0030D24A</string>
+				<string>024BDC451CE458160030D24A</string>
+				<string>024BDC3D1CE40EA00030D24A</string>
+				<string>024BDC3A1CE40D120030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC0C1CE3CF3B0030D24A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Miles Hollingsworth</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>024BDC141CE3CF3B0030D24A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+					</dict>
+					<key>024BDC2E1CE40C630030D24A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>024BDC0F1CE3CF3B0030D24A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>024BDC0B1CE3CF3B0030D24A</string>
+			<key>productRefGroup</key>
+			<string>024BDC161CE3CF3B0030D24A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>024BDC141CE3CF3B0030D24A</string>
+				<string>024BDC2E1CE40C630030D24A</string>
+			</array>
+		</dict>
+		<key>024BDC0F1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>024BDC1B1CE3CF3B0030D24A</string>
+				<string>024BDC1C1CE3CF3B0030D24A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>024BDC101CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>024BDC4F1CE462720030D24A</string>
+				<string>024BDC3E1CE40EA00030D24A</string>
+				<string>024BDC211CE3CF470030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC111CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>024BDC411CE40F200030D24A</string>
+				<string>024BDC491CE45A9F0030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC121CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>024BDC191CE3CF3B0030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC131CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>024BDC3B1CE40D120030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC141CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>024BDC1D1CE3CF3B0030D24A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>024BDC101CE3CF3B0030D24A</string>
+				<string>024BDC111CE3CF3B0030D24A</string>
+				<string>024BDC121CE3CF3B0030D24A</string>
+				<string>024BDC131CE3CF3B0030D24A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>YouTubeInMP3Client</string>
+			<key>productName</key>
+			<string>YouTubeInMP3Client</string>
+			<key>productReference</key>
+			<string>024BDC151CE3CF3B0030D24A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>024BDC151CE3CF3B0030D24A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>YouTubeInMP3Client.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>024BDC161CE3CF3B0030D24A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>024BDC151CE3CF3B0030D24A</string>
+				<string>024BDC2F1CE40C630030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC171CE3CF3B0030D24A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>024BDC1A1CE3CF3B0030D24A</string>
+				<string>024BDC4E1CE462720030D24A</string>
+				<string>024BDC181CE3CF3B0030D24A</string>
+				<string>024BDC201CE3CF470030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Source</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC181CE3CF3B0030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>YouTubeInMP3Client.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC191CE3CF3B0030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC181CE3CF3B0030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>024BDC1A1CE3CF3B0030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC1B1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string></string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>024BDC1C1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string></string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>024BDC1D1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>024BDC1E1CE3CF3B0030D24A</string>
+				<string>024BDC1F1CE3CF3B0030D24A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>024BDC1E1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(SDKROOT)/usr/include/libxml2</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Source/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.hollylabs.YouTubeInMP3Client</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>024BDC1F1CE3CF3B0030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(SDKROOT)/usr/include/libxml2</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Source/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.hollylabs.YouTubeInMP3Client</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>024BDC201CE3CF470030D24A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>YouTubeInMP3Client.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC211CE3CF470030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC201CE3CF470030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC2B1CE40C630030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>024BDC321CE40C630030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC2C1CE40C630030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>02F142881CE51DE10017122C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC2D1CE40C630030D24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>024BDC2E1CE40C630030D24A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>024BDC371CE40C630030D24A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>024BDC2B1CE40C630030D24A</string>
+				<string>024BDC2C1CE40C630030D24A</string>
+				<string>024BDC2D1CE40C630030D24A</string>
+				<string>02F142871CE51DC10017122C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>024BDC361CE40C630030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>YouTubeInMP3ClientTests</string>
+			<key>productName</key>
+			<string>YouTubeInMP3ClientTests</string>
+			<key>productReference</key>
+			<string>024BDC2F1CE40C630030D24A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>024BDC2F1CE40C630030D24A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>YouTubeInMP3ClientTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>024BDC301CE40C630030D24A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>024BDC331CE40C630030D24A</string>
+				<string>024BDC311CE40C630030D24A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Tests</string>
+			<key>path</key>
+			<string>Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC311CE40C630030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>YouTubeInMP3ClientTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC321CE40C630030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC311CE40C630030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC331CE40C630030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC351CE40C630030D24A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>024BDC0C1CE3CF3B0030D24A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>024BDC141CE3CF3B0030D24A</string>
+			<key>remoteInfo</key>
+			<string>YouTubeInMP3Client</string>
+		</dict>
+		<key>024BDC361CE40C630030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>024BDC141CE3CF3B0030D24A</string>
+			<key>targetProxy</key>
+			<string>024BDC351CE40C630030D24A</string>
+		</dict>
+		<key>024BDC371CE40C630030D24A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>024BDC381CE40C630030D24A</string>
+				<string>024BDC391CE40C630030D24A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>024BDC381CE40C630030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.hollylabs.YouTubeInMP3ClientTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>024BDC391CE40C630030D24A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.hollylabs.YouTubeInMP3ClientTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>024BDC3A1CE40D120030D24A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>cartfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC3B1CE40D120030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC3A1CE40D120030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC3D1CE40EA00030D24A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Package.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC3E1CE40EA00030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC3D1CE40EA00030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC3F1CE40F0B0030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Alamofire.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/Alamofire.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC411CE40F200030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC3F1CE40F0B0030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC451CE458160030D24A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Fuzi.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/Fuzi.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC491CE45A9F0030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC451CE458160030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>024BDC4E1CE462720030D24A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>String+substringFromIndex.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>024BDC4F1CE462720030D24A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC4E1CE462720030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>02F142871CE51DC10017122C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array>
+				<string>$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/Fuzi.framework</string>
+			</array>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>/usr/local/bin/carthage copy-frameworks</string>
+		</dict>
+		<key>02F142881CE51DE10017122C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>024BDC151CE3CF3B0030D24A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>024BDC0C1CE3CF3B0030D24A</string>
+</dict>
+</plist>
