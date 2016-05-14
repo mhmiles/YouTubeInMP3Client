@@ -11,14 +11,14 @@ import Alamofire
 import WebKit
 import Fuzi
 
-typealias YouTubeMP3Completion = (String) -> ()
+public typealias YouTubeMP3Completion = (String) -> ()
 
 private let baseURL = "https://www.youtubeinmp3.com"
 
-class YouTubeInMP3Client {
-    static let sharedClient = YouTubeInMP3Client()
+public class YouTubeInMP3Client {
+    public static let sharedClient = YouTubeInMP3Client()
 
-    func getMP3URL(videoID: String, completion: YouTubeMP3Completion) {
+    public func getMP3URL(videoID: String, completion: YouTubeMP3Completion) {
         Alamofire.request(.GET, baseURL+"/fetch/?format=JSON&video=http://www.youtube.com/watch?v="+videoID).responseJSON { response in
             switch response.result {
             case .Success(let JSON):
